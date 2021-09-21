@@ -35,11 +35,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .teams, .contact, footer{
+.about, .succesStories, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -65,16 +64,7 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
+
 
 /* navbar styling */
 .navbar{
@@ -283,14 +273,15 @@ nav {
     background: none;
 }
 
-/* teams section styling */
-.teams{
+/* succesStories section styling */
+.succesStories{
     color:#000;
-    background: #FCB80F;
+    background: #fff;
     height: 1000px;
 }
 
-.teams .card{
+
+.succesStories .card{
     float: left;
     width: 25%;
 
@@ -300,24 +291,24 @@ nav {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .card:hover{
-    background: #FCB80F;
+.succesStories .card:hover{
+    background: #FFF;
 }
-.teams .card .box{
+.succesStories .card .box{
     left: 250px;
     padding: 0 20px;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .card:hover .box{
+.succesStories .card:hover .box{
     transform: scale(1.05);
 }
-.teams .card .text{
+.succesStories .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .card img{
+.succesStories .card img{
     height: 200px;
     width: 200px;
     object-fit:initial;
@@ -325,11 +316,11 @@ nav {
   
     transition: all 0.3s ease;
 }
-.teams .card:hover img{
+.succesStories .card:hover img{
     border-color: #fff;
 }
 
-.teams .row {
+.succesStories .row {
     margin: auto;
 width: 100%;
 padding: 10px;
@@ -370,10 +361,7 @@ border-radius: 15px;
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: crimson;
-}
+
 .contact .contact-content .info .head{
     font-weight: 500;
 }
@@ -620,11 +608,6 @@ footer a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -642,9 +625,6 @@ footer a:hover{
     }
     .home .home-content a{
         font-size: 20px;
-    }
-    .services .serv-content .card{
-        width: 100%;
     }
 }
 
